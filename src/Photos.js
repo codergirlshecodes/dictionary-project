@@ -13,7 +13,8 @@ export default function Photos(props) {
                     {selectedPhotos.map((photo, index) => (
                         <div className="col-auto mb-4" key={index}>
                             <a href={photo.src.original} target="_blank" rel="noopener noreferrer">
-                                <img src={photo.src.landscape} className="img-fluid smaller-photo" alt={`Photo ${index}`} />
+                            <img src={photo.src.landscape} className="img-fluid smaller-photo" alt={`Image ${index}`} />
+
                             </a>
                         </div>
                     ))}
